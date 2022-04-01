@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Weather App</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons.flaticon.com/png/512/2862/premium/2862807.png?token=exp=1646939734~hmac=cba91cbe58bc0041b8d2799aacfafb67">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/afc5c86662.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="searchbar">
+    <input type="text" placeholder="Enter the City" id="city"/>
+    <button onclick="getWeather()">Get Weather</button>
+    <button onclick="getForecast()">Get Forecast</button>
+    </div>
+    <div id="parent">
+    <div id="container"></div>
+    
+    <div class="mapouter">
+        <div class="gmap_canvas"></div>
+    </div>
+    </div>
+</body>
+</html>
+<script src="./index.js"></script>
